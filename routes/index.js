@@ -9,6 +9,7 @@ router.get("/:code", async (req, res) => {
 	try {
 		const url = await Url.findOne({ urlCode: req.params.code });
 		if (url) {
+			await Url.updateOne({ urlCode: url.urlCode }, { clicks: ++url.clicks });
 			return res.redirect(url.longUrl);
 		} else {
 			return res.status(400).json("No url found");

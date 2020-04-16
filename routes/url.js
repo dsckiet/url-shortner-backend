@@ -9,7 +9,7 @@ const Url = require("../models/Url");
 // @route   POST /api/url/shorten
 // @desc    Create short URL
 router.post("/shorten", async (req, res) => {
-	const { longUrl, customCode } = req.body;
+	const { longUrl, customCode, title } = req.body;
 	const baseUrl = config.get("baseUrl");
 
 	// check base url
@@ -42,6 +42,7 @@ router.post("/shorten", async (req, res) => {
 					longUrl,
 					shortUrl,
 					urlCode,
+					title,
 				});
 				await url.save();
 				res.json(url);
@@ -52,6 +53,16 @@ router.post("/shorten", async (req, res) => {
 		}
 	} else {
 		res.status(401).json("Invalid long url");
+	}
+});
+
+router.get("/", async (req, res) => {
+	try {
+		const urls = await Url.find({});
+		res.json(urls);
+	} catch (err) {
+		console.error(err);
+		res.status(500).json("server error");
 	}
 });
 

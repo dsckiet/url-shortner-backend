@@ -4,27 +4,29 @@
 	<p align="left"> This repositry contains the code for the url shortner backend developed using NodeJS, ExpressJS and MongoDB <p>
 </p>
 
-## Functionalities
+
+## Features
 - [x] Create Custom URLs
 - [x] Create Random Shorter URLs
 - [x] Get click analytics of the each URL
 
 
-## Instructions to run
 
-* Pre-requisites:
-	-  < add pre-requisite >
-	-  < add pre-requisite >
+## Instructions to run
 
 * Directions to setup/install
 ```bash
-< insert code >
+git clone `source`
+cd url-shortner-backend
+npm i
+touch .env
 ```
+  copy content of `.env.example` to `.env`
 
 * Directions to execute
 
 ```bash
-< insert code >
+npm run dev
 ```
 
 <br>

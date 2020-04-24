@@ -1,43 +1,39 @@
 <p align="left">
 	<img width="240" src="https://raw.githubusercontent.com/dsckiet/resources/master/dsckiet-logo.png" />
-	<h2 align="left"> < ADD PROJECT TITLE > </h2>
-	<h4 align="left"> < ADD PROJECT DESCRIPTION > <h4>
+	<h2 align="left"> URL Shortner Backend </h2>
+	<p align="left"> This repositry contains the code for the url shortner backend developed using NodeJS, ExpressJS and MongoDB <p>
 </p>
 
----
-[![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=for-the-badge&logo=appveyor)](INSERT_LINK_FOR_DOCS_HERE) 
-  [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=for-the-badge&logo=appveyor)](INSERT_UI_LINK_HERE)
 
+## Features
+- [x] Create Custom URLs
+- [x] Create Random Shorter URLs
+- [x] Get click analytics of the each URL
 
-## Functionalities
-- [ ]  < ADD FUNCTIONALITY >
-- [ ]  < ADD FUNCTIONALITY >
-
-<br>
 
 
 ## Instructions to run
 
-* Pre-requisites:
-	-  < add pre-requisite >
-	-  < add pre-requisite >
-
 * Directions to setup/install
 ```bash
-< insert code >
+git clone `source`
+cd url-shortner-backend
+npm i
+touch .env
 ```
+  copy content of `.env.example` to `.env`
 
 * Directions to execute
 
 ```bash
-< insert code >
+npm run dev
 ```
 
 <br>
 
 ## Contributors
 
-* [ < ADD YOUR NAME > ](ADD_PROFILE_URL_HERE)
+* [ Aakash Goel ](https://github.com/goelaakash79)
 
 
 

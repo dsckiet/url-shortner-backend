@@ -7,8 +7,7 @@
 ## Functionalities
 - [x] Create Custom URLs
 - [x] Create Random Shorter URLs
-
-<br>
+- [x] Get click analytics of the each URL
 
 
 ## Instructions to run
